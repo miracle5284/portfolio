@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     transpilePackages: ['three'],
 };
 
+module.exports = {
+    output: "standalone"
+}
 export default withSentryConfig(withSentryConfig(nextConfig, {
 // For all available options, see:
 // https://www.npmjs.com/package/@sentry/webpack-plugin#options
