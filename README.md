@@ -1,6 +1,6 @@
 # Miracle Adebunmi - Full Stack AI Engineer
 
-![Portfolio Screenshot](./public/screenshot.png)
+![Portfolio Screenshot](./public/portfolio-screenshot.png)
 
 Welcome to my portfolio! This website serves as a personal showcase of my expertise in **full-stack AI engineering**, **backend development**, and **cloud computing**. It features my projects, technical innovations, and professional journey with an interactive, modern design.
 
@@ -25,7 +25,7 @@ As an **experienced full-stack AI engineer** with over **seven years** in the in
 
 ## Live Demo
 
-Experience the portfolio live at: [https://blueprime.app/me](https://blueprime.app/me)
+Experience the portfolio live at: [https://blueprime.app/me](https://blueprime.app/me), [https://blueprimeportfolio.azurewebsites.net/](https://blueprimeportfolio.azurewebsites.net/),
 
 ## About Me
 

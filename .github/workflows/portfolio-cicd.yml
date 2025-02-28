@@ -6,7 +6,7 @@ on:
 
   workflow_dispatch:
 env:
-  APP_NAME: portfolio
+  IMAGE_NAME: portfolio
 
 permissions:
   contents: read
@@ -34,7 +34,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ vars.REGISTRY_LOGIN_SERVER }}/${{ env.APP_NAME }}:latest
+          tags: ${{ vars.REGISTRY_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest
           file: ./Dockerfile
 
   deploy:
@@ -56,4 +56,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ vars.APP_NAME }}
-          images: ${{ vars.REGISTRY_LOGIN_SERVER }}/${{ env.APP_NAME }}:latest
+          images: ${{ vars.REGISTRY_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest
