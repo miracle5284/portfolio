@@ -1,15 +1,16 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { "name": "About", "link": "#about" },
+    { "name": "Experience", "link": "#experience" },
+    { "name": "Projects", "link": "#projects" },
+    { "name": "Publications", "link": "#publications" },
+    { "name": "Contact", "link": "#contact" }
 ];
 
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
-        description: "",
+        title: "I architect scalable AI-driven solutions",
+        description: "Leveraging AI, cloud computing, and backend engineering to build high-performance, scalable, and efficient systems that drive innovation.",
         style: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
@@ -38,8 +39,8 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "Tech enthusiast with a passion for development.",
-        description: "",
+        title: "I specialize in scalable AI, backend, and cloud orchestration",
+        description: "Expert in architecting scalable, high-performance AI-driven solutions, seamlessly integrating backend systems with cloud-native and frontend infrastructures to ensure efficiency, reliability, and seamless orchestration.",
         style: "lg:col-span-2 md:col-span-3 md:row-span-1",
         imgClassName: "",
         titleClassName: "justify-start",
@@ -49,8 +50,8 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
-        description: "The Inside Scoop",
+        title: "Innovating AI-Driven Backend Automation",
+        description: "Building seamless, scalable backend solutions that leverage AI for intelligent automation, cloud orchestration, and real-time data processing.",
         style: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
         titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -69,149 +70,105 @@ export const gridItems = [
     },
 ];
 
+export const GridItems = [
+    {
+        "id": 1,
+        "title": "I architect scalable AI-driven solutions",
+        "description": "Leveraging AI, cloud computing, and backend engineering to build high-performance, scalable, and efficient systems that drive innovation.",
+        "style": "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+        "imgClassName": "w-full h-full",
+        "titleClassName": "justify-end",
+        "img": "/ai_backend.svg",
+        "spareImg": ""
+    },
+    {
+        "id": 2,
+        "title": "I specialize in backend engineering & AI integration",
+        "description": "Expert in designing scalable, high-performance AI applications with seamless backend integration, ensuring optimal performance and reliability.",
+        "style": "lg:col-span-2 md:col-span-3 md:row-span-2",
+        "imgClassName": "",
+        "titleClassName": "justify-start",
+        "img": "",
+        "spareImg": ""
+    }
+];
+
 export const projects = [
     {
-        id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "https://github.com/adrianhajdin?tab=repositories",
+        "id": 1,
+        "title": "Dash FastAPI Chatbot with LlamaIndex",
+        "des": "A cutting-edge AI-powered chatbot integrating FastAPI and LlamaIndex for real-time intelligent conversations, built for scalability and efficiency.",
+        "img": "/chatbot-ui.png",
+        "iconLists": [["/python.svg", "transform scale-200 transition duration-300"], ["/fastapi.svg", ""], ["/llamaindex.jpeg", ""], ["/openai.jpeg", ""]],
+        "link": "https://github.com/miracle5284/dash-fastapi-chatbot-llamaindex"
     },
     {
-        id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/zoom-clone",
+        "id": 2,
+        "title": "TimeApp - A Custom Timer Application",
+        "des": "An interactive, customizable timer application designed for maximum productivity, featuring a seamless user experience and responsive design.",
+        "img": "/timer-app.png",
+        "iconLists": [["/python.svg", "transform scale-600 transition duration-300"], ["/django.svg", ''], ["/javascript.svg", ""], ["/css3.svg", ""]],
+        "link": "https://timer.blueprime.app/timer"
     },
     {
-        id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-        id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "https://github.com/adrianhajdin/iphone",
-    },
-];
-
-export const testimonials = [
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-];
-
-export const companies = [
-    {
-        id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
-    },
-    {
-        id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
-    },
-    {
-        id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
-    },
-    {
-        id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
-    },
-    {
-        id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
-    },
+        "id": 3,
+        "title": "Resume Builder AI",
+        "des": "An advanced AI-powered resume builder leveraging NLP and LLMs to generate professional, optimized resumes tailored to user preferences.",
+        "img": "/resumebuilderai.jpg",
+        "iconLists": [["/python.svg", ""], ["crewai.png"], ["/openai.jpeg", ""], ["/fastapi.svg", ""], ["/react.svg", ""], ['tailwindcss.svg', '']],
+        "link": "https://github.com/miracle5284/resume-builder-ai"
+    }
 ];
 
 export const experiences = [
     {
-        id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-        className: "md:col-span-2",
-        thumbnail: "/exp1.svg",
+        "id": 1,
+        "title": "AI Software Engineer",
+        "desc": "Developed and optimized AI models, enhanced LLM capabilities, and contributed to AI-driven automation and function calling for large-scale applications.",
+        "className": "md:col-span-2",
+        "thumbnail": "/exp_openai.svg"
     },
     {
-        id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp2.svg",
+        "id": 2,
+        "title": "Backend Lead - Secomind AI",
+        "desc": "Led a backend team in designing and deploying an IoT-powered, AI-driven vending machine management system, significantly boosting efficiency and customer experience.",
+        "className": "md:col-span-2",
+        "thumbnail": "/exp_secomind.svg"
+    }
+];
+
+export const testimonials = [
+    {
+        quote: "Miracle is a quick self-learner and never thinks twice to take full ownership of any given task. His backend development skills are a plus, and he always thinks outside the box for solutions. Highly recommended for Python and REST framework development.",
+        name: "Swati Srivastava",
+        title: "Senior Engineering Lead, Google Business Unit"
     },
     {
-        id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
+        quote: "One of Miracle's top skills is adaptability, the ability to quickly pick up things and do an excellent job. His quality of work distinguishes him from other developers, and I truly enjoyed collaborating with him.",
+        name: "Amir Ali",
+        title: "Frontend Developer, Grappetite"
     },
     {
-        id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
-        className: "md:col-span-2",
-        thumbnail: "/exp4.svg",
+        quote: "Miracle has a natural talent for developing features that drive business growth. He's a quick self-learner, dedicated to ensuring successful feature development. I highly recommend him for Backend Development.",
+        name: "Akshay Saini",
+        title: "Senior Software Engineer"
     },
+    {
+        quote: "Miracle was always the one I reached out to for any Backend related tasks. He’s always available, and his work is spot-on and on time. I highly recommend Miracle.",
+        name: "Naveen",
+        title: "Android App Developer"
+    }
+];
+
+export const companies = [
+    { id: 1, name: "Fiverr", img: "", nameImg: "/fiverr-logo.jpg" },
+    { id: 2, name: "Secomind AI", img: "", nameImg: "/secomind_logo.jpeg" },
+    { id: 3, name: "Turing", img: "/turing.svg", nameImg: "/turingName.svg" },
+    { id: 4, name: "Data Annotation", img: "" , nameImg: "/dataannotation.jpg" }
 ];
 
 export const socialMedia = [
-    {
-        id: 1,
-        img: "/git.svg",
-    },
-    {
-        id: 2,
-        img: "/twit.svg",
-    },
-    {
-        id: 3,
-        img: "/link.svg",
-    },
+    { "id": 1, "img": "/github.svg" },
+    { "id": 2, "img": "/linkedin.svg" },
+    { "id": 3, "img": "/twitter.svg" }
 ];

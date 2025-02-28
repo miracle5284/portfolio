@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+        width="800"
+        height="500"
+        viewBox="0 0 800 500"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <!--
+      Background Gradient
+    -->
+    <defs>
+        <linearGradient id="bgGradient2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#141E30" />
+            <stop offset="100%" stop-color="#243B55" />
+        </linearGradient>
+
+        <!-- Glow effect for shapes -->
+        <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!--
+      Full background
+    -->
+    <rect
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            fill="url(#bgGradient2)"
+    />
+
+    <!--
+      Stylized Llama Silhouette
+    -->
+    <path
+            d="
+      M 200 350
+      C 190 300, 210 250, 240 220
+      C 260 200, 290 190, 300 150
+      C 310 110, 320 100, 330 100
+      C 350 105, 355 125, 360 150
+      C 370 210, 410 230, 420 250
+      C 430 280, 420 320, 400 350
+      C 380 380, 360 390, 340 390
+      C 310 390, 280 380, 250 380
+      C 230 380, 210 370, 200 350
+      Z
+    "
+            fill="#00C2FF"
+            opacity="0.15"
+            filter="url(#glow2)"
+    />
+
+    <!--
+      Large Chat Bubble
+    -->
+    <path
+            d="
+      M 500 120
+      C 640 120, 700 180, 700 300
+      C 700 420, 640 480, 500 480
+      C 400 480, 350 450, 350 450
+      L 300 470
+      L 320 420
+      C 320 420, 280 380, 280 300
+      C 280 180, 360 120, 500 120
+      Z
+    "
+            fill="#00D1B2"
+            opacity="0.10"
+            filter="url(#glow2)"
+    />
+
+    <!--
+      Title Text
+    -->
+    <text
+            x="50%"
+            y="80"
+            fill="#FFFFFF"
+            font-size="32"
+            font-weight="bold"
+            text-anchor="middle"
+            font-family="Arial, sans-serif"
+    >
+        Dash FastAPI Chatbot
+    </text>
+
+    <!--
+      Subtitle
+    -->
+    <text
+            x="50%"
+            y="120"
+            fill="#FFFFFF"
+            font-size="16"
+            text-anchor="middle"
+            font-family="Arial, sans-serif"
+            opacity="0.8"
+    >
+        Powered by LlamaIndex for Real-Time AI Conversations
+    </text>
+
+    <!--
+      Tech/AI Connections (stylized arcs or lines)
+    -->
+    <path
+            d="M 420 200
+       C 450 250, 550 250, 580 200
+       M 420 220
+       C 450 270, 550 270, 580 220
+       M 420 240
+       C 450 290, 550 290, 580 240
+      "
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+            opacity="0.3"
+    />
+
+</svg>

@@ -6,11 +6,11 @@ import {FaLocationArrow} from "react-icons/fa";
 const RecentProjects = () => {
     return (
         <div className="py-20" id="projects">
-            <h1 className="heading">
-                A small selection of {' '}
-                <span className="text-purple">recent projects</span>
+            <h1 className="heading mb-10">
+                A small selection of my {' '}
+                <span className="text-purple">ongoing projects</span>
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-20">
                 {projects.map(project => (
                     <div key={project.id} className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
                         <PinContainer title={project.link} href={project.link}>
@@ -32,10 +32,10 @@ const RecentProjects = () => {
                             <div className="flex items-center justify-between mt-7 mb-3">
                                 <div className="flex items-center">
                                     {project.iconLists.map(icon => (
-                                        <div key={icon}
-                                             className="border border-white/[0.2] rounded-full bg-black lg:w-10
-                                             lg:h-10 w-8 h-8 flex justify-center items-center" style={{transition: `translateX(-${5*project.id*2}px)`}}>
-                                            <img src={icon} alt={icon} className="p-2" />
+                                        <div key={icon[0]}
+                                             className="border border-white/[0.2] rounded-full bg-black lg:w-12
+                                             lg:h-12 w-10 h-10 flex justify-center items-center" style={{transition: `translateX(-${5*project.id*2}px)`}}>
+                                            <img src={icon[0]} alt={icon[0]} className={`p-2 ${icon[1]}`} />
                                         </div>
                                     ))}
                                 </div>
